@@ -1,0 +1,289 @@
+
+/*
+顶部样式
+*/
+.header{
+    height: 25px;
+    background-color: #333;
+    width:100%;
+    padding:5px 0;
+    font-size:12px;
+}
+.header_content{
+    line-height: 25px;
+}
+.header_left{
+    float: left;
+}
+.header_right{
+    float: right;
+}
+.header_right a{
+    color: #dddddd;
+}
+.header_right>a{
+    padding-left:15px;
+}
+.header_right>span{
+    padding-right:25px;
+}
+.header_right span:hover{
+    color: #ffffff;
+}
+/*
+search栏
+*/
+.nav{
+    height: 80px;
+}
+
+.nav_left{
+    float: left;
+    margin:16px 0;
+}
+.navbar{
+    float: left;
+    margin: 29.5px 0 29.5px 80px;
+}
+.search{
+    float: right;
+    margin:20px 0 20px 50px;
+}
+.nav img{
+    width:160px;
+    height:48px;
+}
+.nav_right a{
+    font-size: 18px;
+}
+.search input{
+    width:200px;
+    height:28px;
+    border:1px solid #e5e5e5;
+    border-radius: 2px;
+    padding:5px 15px 5px;
+    font-size:12px;
+}
+.search a{
+    display: inline-block;
+    height:38px;
+    width:50px;
+    border:1px solid #e5e5e5;
+    color:#333;
+    line-height: 40px;
+    position: relative;
+    top:3px;
+    left:-5px;
+    text-align: center;
+    border-left: none;
+}
+.navbar a{
+    font-size:16px;
+    color: #333;
+    margin-left:40px;
+}
+.navbar a:hover{
+    color: #ffa02e;
+}
+/*内容区*/
+.content{
+    background-color: #f5f5f5;
+}
+/*
+商家分类
+*/
+.content{
+   background-color: #f5f5f5;
+    padding-top: 4px;
+    padding-bottom: 30px;
+}
+.inner_classify{
+    width:980px;
+    margin:0 auto;
+    background-color: #ffffff;
+}
+.classify{
+    margin:10px 10px 0 10px;
+    width:960px;
+}
+.classify_content{
+    position: relative;
+    padding:35px 0;
+    /*margin:0 10px;*/
+}
+.classify_content span{
+    display: block;
+    float: left;
+    font-size:14px;
+    margin-right: 15px;
+    background: url("img/icon_sort2.png") no-repeat;
+    padding-left: 32px;
+    position: absolute;
+    left:0;
+}
+.classify_content ul{
+    width:500px;
+    padding-left: 120px;
+}
+.classify_content ul li:nth-child(1){
+    color: #ffa02e;
+}
+.classify_content ul li{
+    float:left;
+    margin-left:21px;
+    color: #3e3e3e;
+    font-size:14px;
+}
+.classify_content ul li:hover{
+    color: #ffa02e;
+}
+/*商家列表*/
+.seller_list{
+    width: 980px;
+    margin:10px auto 0 auto;
+    background-color: #ffffff;
+}
+.seller_list li{
+    float: left;
+
+}
+.seller_list img{
+    width:210px;
+    height:158px;
+}
+.sl{
+    width:210px;
+    padding:25px 15px 30px 15px;
+}
+.storeName{
+    padding:7px 0;
+}
+.storeName span{
+    display:inline-block;
+    width:180px;
+    font-size:16px;
+    color:#313131;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.predetermine{
+    font-size:12px;
+    color: #348bed;
+
+}
+.predetermine span{
+    display: inline-block;
+    border: 1px solid #348bed;
+    padding:1px 3px;
+}
+.storeDetails{
+    font-size:12px;
+    color: #666666;
+    padding:5px 0px;
+}
+.storePrice{
+    float: left;
+}
+.storePrice span{
+    display: inline-block;
+    padding-right:10px;
+}
+.storeTime{
+    float: right;
+}
+/*商家列表------等级评分*/
+
+
+.seperate{
+    width: 930px;
+    margin:0 auto;
+    border-top: 1px solid #dadada;
+    position: relative;
+    left:15px;
+}
+.moreSeller{
+    text-align: center;
+    padding:20px 0 20px 0;
+}
+.moreSeller a{
+    font-size:14px;
+    color: #666666;
+}
+/*尾部*/
+.footer{
+    margin-top: 10px;
+}
+.footer-content{
+    padding:30px 0;
+}
+.footer li{
+    line-height: 30px;
+}
+.footer li a{
+    color: #666;
+    font-size: 12px;
+}
+.list{
+    float: left;
+
+}
+.f1,.f2{
+    padding-right: 100px;
+}
+.f3{
+    padding-right: 70px;
+    border-right: 1px dashed #666666;
+}
+.f4{
+    padding:0 50px;
+    border-right: 1px dashed #666666;
+    height: 124px;
+}
+.f4_list1{
+    font-size:20px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.f4_list2,.f4_list3{
+    color:#666;
+    font-size:12px;
+    margin-top: 5px;
+}
+.f5 img{
+    width:100px;
+    height:100px;
+    margin:0 20px 0 50px;
+}
+.f5_p1{
+    padding-top: 25px;
+    font-size:15px;
+    color:#2A2A2A;
+    font-weight: bold;
+}
+.f5_p2{
+    padding-top:5px;
+    font-size:14px;
+    color:#666;
+}
+
+/*备案信息*/
+.sp{
+    padding:15px 0;
+    text-align: center;
+}
+.sp_icon,.sp_icon a{
+    display: inline-block;
+    height:30px;
+    width:120px;
+    vertical-align: middle;
+}
+.sp_icon a{
+    background: url("img/sp.jpg") no-repeat;
+    background-size: contain;
+}
+.sp_info,.sp_info a{
+    font-size:12px;
+    color:#666;
+}
