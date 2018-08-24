@@ -41,20 +41,6 @@
         isSymbol:function(value){
             return typeof value === "symbol" || (isObjectLike(value) && getTag(value) === "[object Symbol]")
         },
-        //判断是否为原生对象
-        isPlainObject:function (value) {
-            if (!isObjectLike(value) || getTag(value) !== "[object Object]") {
-                return false;
-            }
-            if (Object.getPrototypeOf(value) === null) {
-                return true;
-            }
-            var proto=value;
-            while (Object.getPrototypeOf(proto) !== null) {
-                proto = Object.getPrototypeOf(proto)
-            }
-            return Object.getPrototypeOf(value) === proto;
-        },
     };
     //判断typeof是否是object  并且原值不为null
     function isObjectLike(value) {
