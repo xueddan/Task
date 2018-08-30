@@ -1,7 +1,7 @@
 ## chapter3
 1. 数据类型
    原始值（不可更改）：number string Boolean null  undefined  对象（可更改）：object
-   **字符串中的所有方法，实际上返回的是一个新的字符串值**
+    **字符串中的所有方法，实际上返回的是一个新的字符串值**
 2. Infinity表示无穷大
    NaN表示非数字值
 3. null和undefined
@@ -11,7 +11,9 @@
   var s="hello world";
   var word=s.substring(s.indexOf(" ")+1,s.length);
   (```)
-  当通过字面量方式声明的字符串变量，调用String上的方法，这时，Javascript就会将字符串值通过调用new String(s)的方式来将其转换为对象，**一旦属性引用结束，就会销毁这个临时对象**。
+  当通过字面量方式声明的字符串变量，调用String上的方法，这时，
+  Javascript就会将字符串值通过调用new String(s)的方式来将其转换为对象，
+  **一旦属性引用结束，就会销毁这个临时对象**。
 5. 类型转换
    - 自动类型转换：Javascript会跟根据需要自行转换类型
    - 显示类型转换：使用Boolean()、Number()、String()或者Object()函数进行转换。
