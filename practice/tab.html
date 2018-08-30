@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tab</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        .tab {
+            width: 400px;
+            height: 200px;
+            margin: 50px auto;
+        }
+        ul li {
+            float: left;
+            width: 100px;
+            background-color: #e5e5e5;
+            margin-right: 5px;
+            list-style: none;
+            text-align: center;
+        }
+        .clearfix::after {
+            content: '';
+            clear: both;
+            display: block;
+            overflow: hidden;
+            height: 0;
+        }
+        .active {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+<div class="tab">
+    <ul class="clearfix title">
+        <li class="active">标签1</li>
+        <li>标签2</li>
+        <li>标签3</li>
+    </ul>
+    <div class="content">
+        <div data-ser="0" style="display: block">内容1</div>
+        <div data-ser="1" style="display: none">内容2</div>
+        <div data-ser="2" style="display: none">内容3</div>
+    </div>
+</div>
+<script>
+    var titles=document.querySelectorAll('.title li');
+    var contents=document.querySelectorAll('.content div');
+    var title=document.querySelector('ul');
+    function init() {
+        for(var i=0;i<contents.length;i++){
+            contents[i].style.display='none';
+        }
+    }
+    title.addEventListener('click',function () {
+        var target=event.target,liIndex;
+        for(var t in titles) {
+            if(titles[t].className=='active'){
+                titles[t].classList.remove('active');
+            }
+            if (target == titles[t]) {
+                liIndex=t;      // 获取点击的li标签的index
+                titles[t].classList.add('active');
+            }
+        }
+        init();
+        for(var i=0;i<contents.length;i++){
+            console.log(contents[i].dataset.ser);
+            if(contents[i].dataset.ser==liIndex){
+                contents[i].style.display='block';
+            }
+        }
+    },false);
+</script>
+</body>
+</html>

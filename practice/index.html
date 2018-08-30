@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习</title>
+    <style>
+        #drag{
+            position: absolute;
+            background-color: #ffa02e;
+            width:200px;
+            height:200px;
+        }
+    </style>
+</head>
+<body>
+<div id="drag">
+
+</div>
+
+<script>
+    //拖放
+    window.onload=function () {
+        var dragEle=document.getElementById("drag");
+        dragEle.onmousedown=function (event) {
+            var event=event||window.event;
+            var startX=event.clientX-dragEle.offsetLeft;
+            var startY=event.clientY-dragEle.offsetTop;
+            document.onmousemove=function (event) {
+                var event=event||window.event;
+                dragEle.style.left=event.clientX-startX+"px";
+                dragEle.style.top=event.clientY-startY+"px";
+            }
+            document.onmouseup=function (event) {
+                document.onmousemove=null;
+                document.onmouseup=null;
+            }
+        }
+    }
+    //测试鼠标 左键 右键 值
+    document.onmousedown=function (event) {
+        var event=event||window.event;
+        console.log(event.button);
+    }
+
+</script>
+</body>
+</html>

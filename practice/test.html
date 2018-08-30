@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="container">
+    <div id="d">This is a div.</div>
+</div>
+</body>
+<script>
+    let container = document.getElementById("container");
+    let d = document.getElementById("d");
+    console.log(d);
+    console.log(container.firstChild.nodeName);
+    // logs "div"
+
+    d.outerHTML = "<p>This paragraph replaced the original div.</p>";
+
+    console.log(container.firstChild.nodeName);
+</script>
+</html>

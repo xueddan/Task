@@ -1,0 +1,117 @@
+array       Array.isArray
+undefined   typeof
+function    typeof=="function"   函数也可以算是一个对象
+
+null        1、typeof=="object"  toString  2、null==null
+
+number  String Boolean
+    1、直接量
+       typeof  =="number"
+    2、包装对象
+       typeof  =="object"&& toString
+
+RegExp Date Error
+1、typeof=="object" && value!=null
+2、Object.getProtoTypeof(reg)==RegExp.protoType
+   Object.getPrototypeOf(err) === Error.prototype
+   Object.getPrototypeOf(date) === Date.prototype
+
+原生对象
+isPlainObject
+
+自定义类
+1、判断
+   constructor
+2、输出完整的取值
+   !isPlainObject  ->  截取constructor  输出构造函数类名
+
+
+
+1、toString(radix） 添加一个参数，可以将数字转换为其他进制数
+   eg. var n=17;
+       binary_string=n.toString(2)   //转换为二进制
+   parseInt("11",2)  传递两个参数，第二个参数明确需要转换的进制数
+2、对象转换为原始值
+   (原始值->布尔  数字  字符串  null undefined)
+   对象->布尔  所有的对象都可以转换为true
+   对象->字符串  先调用对象上的toString方法（如果有），调用valueOf方法
+   对象->数字    先调用对象上的valueOf方法（如果有），调用toString方法
+3、表达式
+   原始表达式：常量 直接量  关键字 变量
+   -数组初始化表达式
+   数组直接量的元素列表结尾处可以留下单个逗号，这是不会创建一个新的值为undefined的元素
+   -属性访问表达式
+   如果属性名称是一个保留字或者包含空格和标点符号或是一个数字 ，或者是通过运算得出的值，则必须使用方括号
+4、运算符
+   当加号运算符和字符串和数字一起使用时，需要考虑加法的结合性对运算顺序的影响。
+   eg.1+2+"blind mice"  //"3 blind mice"
+      1+(2+"blind mice")  // "12 blind mice"
+   ++运算符不进行字符串的连接操作，它总是将操作数转换为数字并增1
+   eg.x="1"  ++x
+      ++x    //2      x+1   //"11"
+5、逻辑表达式
+   &&  左侧表达式是假值，返回左侧表达式的值
+       左侧表达式是真值，返回右侧表达式的值
+   ||  左侧表达式是真值，返回左侧表达式的值
+6、严格模式
+   在严格模式中，禁止使用with语句
+   在严格模式中，所有的变量都要先声明
+   在严格模式中，调用的函数（不是方法）中的一个this值是undefined。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
