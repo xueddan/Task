@@ -7,7 +7,6 @@
 3. null和undefined
    typeof null/undefined，返回object。null==undefined,返回true。
 4. 包装对象
-   &emsp;当通过字面量方式声明的字符串变量，调用String上的方法，这时，Javascript就会将字符串值通过调用new String(s)的方式来将其转换为对象，**一旦属性引用结束，就会销毁这个临时对象**。
   ```
   var s="hello world";
   var word=s.substring(s.indexOf(" ")+1,s.length);
