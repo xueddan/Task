@@ -135,8 +135,8 @@
 - 作为构造函数
 - 通过它们的call()和apply()方法间接调用
 2. 嵌套函数的this指向
-   - 如果嵌套函数作为方法调用，其this的值指向调用它的对象。
-   - 如果嵌套函数作为函数调用，其this值不是全局对象(非严格模式下)就是undefined(严格模式)。
+- 如果嵌套函数作为方法调用，其this的值指向调用它的对象。
+- 如果嵌套函数作为函数调用，其this值不是全局对象(非严格模式下)就是undefined(严格模式)。
 3. arguments不是真正的数组，是一个对象，具有以数字为索引的一组元素以及length属性。
 4. callee属性指代当前正在执行的函数
 5. 闭包
@@ -173,7 +173,7 @@
    eg.data-jquery-test变成dataset.jqueryTest。
 3. querySelector和querySelectorAll()
 ## chapter17
-1. addEventListener
+1. addEventListener<br>
    第三个参数是个对象：target.addEventListener(type, listener ,{capture: Boolean, passive: Boolean, once: Boolean});
    - Capture：Boolean，表示 listener 会在该类型的事件捕获阶段传播到该 EventTarget 时触发。
    - Once:Boolean,表示 listener 在添加之后最多只调用一次。如果是 true， listener 会在其被调用之后自动移除。
