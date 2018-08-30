@@ -11,9 +11,9 @@
   var s="hello world";
   var word=s.substring(s.indexOf(" ")+1,s.length);
   ```
-  当通过字面量方式声明的字符串变量，调用String上的方法，这时，
-  Javascript就会将字符串值通过调用new String(s)的方式来将其转换为对象，
-  **一旦属性引用结束，就会销毁这个临时对象**。
+  &emsp;当通过字面量方式声明的字符串变量，调用String上的方法，这时，
+  &emsp;Javascript就会将字符串值通过调用new String(s)的方式来将其转换为对象，
+  &emsp;**一旦属性引用结束，就会销毁这个临时对象**。
 5. 类型转换
    - 自动类型转换：Javascript会跟根据需要自行转换类型
    - 显示类型转换：使用Boolean()、Number()、String()或者Object()函数进行转换。
@@ -75,9 +75,9 @@
          configurable:true
      })
   ```
-  修改属性注意：
-  如果数据属性是不可配置的，则不能将它的可写性从false修改未true，但可以从true修改未false。
-  如果数据属性是不可配置且不可写的，则不能修改它的值。然而可配置但不可写的属性值是可以修改的（先将它标记为可写，然后修改它的值，最后转换为不可写的）。
+  &emsp;修改属性注意：
+  &emsp;如果数据属性是不可配置的，则不能将它的可写性从false修改未true，但可以从true修改未false。
+  &emsp;如果数据属性是不可配置且不可写的，则不能修改它的值。然而可配置但不可写的属性值是可以修改的（先将它标记为可写，然后修改它的值，最后转换为不可写的）。
 3. Object.defineProperties()
     ```
      eg.Object.defineProperty(obj,
